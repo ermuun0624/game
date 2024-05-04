@@ -1,0 +1,23 @@
+GraphicsWindow.Width=1000
+graphicswindow.height=300
+graphicswindow.title="small basic clock"
+GraphicsWindow.BackgroundColor="Black"
+GraphicsWindow.BrushColor="green"
+'font oorchilno (optional)
+GraphicsWindow.fontname="Courier New"
+
+While "True"
+  Program.Delay(1000)
+  draw()
+EndWhile
+
+
+Sub draw
+  GraphicsWindow.Clear()
+  GraphicsWindow.FontSize=150
+  GraphicsWindow.DrawText(0,10,Clock.time)
+  GraphicsWindow.DrawText(80,160,Clock.Date)
+  
+
+
+EndSub
